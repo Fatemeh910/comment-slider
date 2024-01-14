@@ -36,7 +36,8 @@ let currentIndex = 0;
 function showComment() {
     const comment = data[currentIndex];
 
-    commentItem = `<div class="comment-img-wrapper">
+   const commentItem = `
+    <div class="comment-img-wrapper">
     <img src=${comment.img} alt=${comment.name} class="comment-img" />
     <i class="fa fa-heart comment-img-icon"></i>
   </div>
@@ -50,7 +51,7 @@ function showComment() {
   </div> 
   `;
 
-    commentBox.innerHTML = commentItem
+    commentBox.innerHTML = commentItem;
 }
 
 
