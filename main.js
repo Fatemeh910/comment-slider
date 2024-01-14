@@ -28,7 +28,7 @@ const data = [
         text: "Lorem ipsum dolor sit amet,maiores odio, odit officia pariatur perspiciatis provident quidem repellat sequi tempora totam vitae voluptatibus! Amet cum dolor fugiat iusto tempore! Autem, fuga.",
     },
 ];
-
+const shuffledData = data.sort(()=>Math.random() - 0.5);
 ///ELEMENt
 const commentBox = document.querySelector('.comment-info-box');
 
@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded",showComment);
 let currentIndex = 0;
 
 function showComment() {
-    const comment = data[currentIndex];
+    const comment = shuffledData[currentIndex];
 
    const commentItem = `
     <div class="comment-img-wrapper">
