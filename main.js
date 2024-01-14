@@ -32,7 +32,9 @@ const data = [
 ///ELEMENt
 const commentBox = document.querySelector('.comment-info-box');
 
+window.addEventListener("DOMContentLoaded",showComment);
 let currentIndex = 0;
+
 function showComment() {
     const comment = data[currentIndex];
 
