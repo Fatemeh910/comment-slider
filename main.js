@@ -77,7 +77,7 @@ function setPrevComment(){
     showComment();
 
 };
-///GO TO NEXT CoMMENT
+///GO TO NEXT COMMENT
 function setNextComment(){
     currentIndex ++;
     if
