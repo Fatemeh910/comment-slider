@@ -31,6 +31,9 @@ const data = [
 const shuffledData = data.sort(()=>Math.random() - 0.5);
 ///ELEMENt
 const commentBox = document.querySelector('.comment-info-box');
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
+const randomButton = document.querySelector('.random-btn');
 
 window.addEventListener("DOMContentLoaded",showComment);
 let currentIndex = 0;
