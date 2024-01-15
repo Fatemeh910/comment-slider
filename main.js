@@ -40,7 +40,7 @@ const randomButton = document.querySelector('.random-btn');
 window.addEventListener("DOMContentLoaded",showComment);
 prevButton.addEventListener('click',setPrevComment);
 nextButton.addEventListener('click',setNextComment);
-
+randomButton.addEventListener('click',setRandomComment);
 
 let currentIndex = 0;
 ///نمایش کامنت فعلی
@@ -87,6 +87,12 @@ function setNextComment(){
     showComment();
 
 };
+//SET RAnDOM COMMENt
+function setRandomComment(){
+    currentIndex = Math.floor(Math.random() *shuffledData.length);
+    showComment();
+}
+
 
 
 
