@@ -38,7 +38,9 @@ const randomButton = document.querySelector('.random-btn');
 //EVENT
 
 window.addEventListener("DOMContentLoaded",showComment);
-prevButton.addEventListener('click',setprevcomment);
+prevButton.addEventListener('click',setPrevComment);
+nextButton.addEventListener('click',setNextComment);
+
 
 let currentIndex = 0;
 ///نمایش کامنت فعلی
@@ -64,11 +66,22 @@ function showComment() {
 }
 
 //BACK TO PREVIOuS COMMENTS
-function setprevcomment(){
+function setPrevComment(){
     currentIndex--;
     if
         (currentIndex <0){
          currentIndex = shuffledData.length -1; 
+        }
+    
+    showComment();
+
+};
+///GO TO NEXT CoMMENT
+function setNextComment(){
+    currentIndex ++;
+    if
+        (currentIndex > shuffledData.length -1){
+         currentIndex = 0; 
         }
     
     showComment();
