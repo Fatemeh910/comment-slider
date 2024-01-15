@@ -35,7 +35,11 @@ const prevButton = document.querySelector('.prev-btn');
 const nextButton = document.querySelector('.next-btn');
 const randomButton = document.querySelector('.random-btn');
 
+//EVENT
+
 window.addEventListener("DOMContentLoaded",showComment);
+prevButton.addEventListener('click',setprevcomment);
+
 let currentIndex = 0;
 
 function showComment() {
@@ -58,6 +62,18 @@ function showComment() {
 
     commentBox.innerHTML = commentItem;
 }
+
+//BACK TO PREVIOuS COMMENTS
+function setprevcomment(){
+    currentIndex--;
+    if
+        (currentIndex <0){
+         currentIndex = shuffledData.length -1; 
+        }
+    
+    showComment();
+
+};
 
 
 
