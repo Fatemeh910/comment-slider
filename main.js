@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded",showComment);
 prevButton.addEventListener('click',setprevcomment);
 
 let currentIndex = 0;
-
+///نمایش کامنت فعلی
 function showComment() {
     const comment = shuffledData[currentIndex];
 
