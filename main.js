@@ -28,6 +28,7 @@ const data = [
         text: "Lorem ipsum dolor sit amet,maiores odio, odit officia pariatur perspiciatis provident quidem repellat sequi tempora totam vitae voluptatibus! Amet cum dolor fugiat iusto tempore! Autem, fuga.",
     },
 ];
+//برزدن مقادیرارایه
 const shuffledData = data.sort(()=>Math.random() - 0.5);
 ///ELEMENt
 const commentBox = document.querySelector('.comment-info-box');
